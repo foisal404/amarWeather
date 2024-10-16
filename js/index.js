@@ -10,7 +10,7 @@ setInterval(() => {
 
 const weatherForcast = function (key, city) {
     return (
-        fetch(`http://api.weatherapi.com/v1/forecast.json?key=${key}&q=${city}&days=14`)
+        fetch(`https://api.weatherapi.com/v1/forecast.json?key=${key}&q=${city}&days=14`)
             .then(res => res.json())
             .then(data => data)
             .catch(error => error)
