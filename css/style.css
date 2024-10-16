@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #87a5b4;
+  color: #333333;
+}
+
+#error-message {
+  font-size: 40px;
+  color: #eb3232;
+  text-align: center;
+}
+#error-code {
+  font-size: 10px;
+  color: #d24343;
+  font-weight: 900;
+  text-align: center;
+}
+
+.weather-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.time {
+  font-size: 18px;
+  background-color: #ffffff83;
+  padding: 6px 10px;
+  border: 0px solid none;
+  border-radius: 5%;
+  min-width: 115px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+nav ul li {
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 10px;
+}
+
+nav ul li.active {
+  background-color: #fff;
+  color: #333;
+}
+
+.weather-card {
+  background: linear-gradient(105deg, #94aee6, #c9c8c8);
+  border-radius: 20px;
+  padding: 20px;
+  position: relative;
+}
+
+.location-search input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.weather-info h2 {
+  font-size: 30px;
+  margin: 10px 0px;
+}
+
+.weather-info p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.temp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 70px;
+}
+
+.temp span {
+  font-size: 48px;
+}
+.temp img {
+  width: 100px;
+}
+.details {
+  display: flex;
+  justify-content: space-between;
+}
+.details p {
+  font-size: 14px;
+}
+
+.hourly-forecast {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.hour {
+  text-align: center;
+  font-size: 14px;
+}
+
+.hour img {
+  width: 40px;
+  margin: 10px 0;
+}
+.logo img {
+  width: 100px;
+}
+
+.weather-card-calendar {
+  background-color: #c9c8c8;
+  border-radius: 12px;
+  padding: 20px;
+  width: 100%;
+  margin: 20px auto;
+  text-align: center;
+  max-height: 380px;
+  overflow-y: hidden;
+}
+
+.weather-card-calendar h2 {
+  font-size: 1.8em;
+  color: #333333;
+  margin-bottom: 15px;
+}
+
+.weather-calendar {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.weather-day {
+  background-color: #94aee6;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  color: #333333;
+}
+
+.weather-date {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.weather-temp {
+  font-size: 1.2em;
+  margin-top: 5px;
+}
+
+.button-group {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.button-group li {
+  flex: 1;
+  padding: 10px 20px;
+  text-align: center;
+  background-color: #87a5b4;
+  color: white;
+  margin-right: 10px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.button-group li {
+  background-color: #7585a5;
+}
+
+.button-group li:active {
+  background-color: #6f8a9c;
+}
+
+.button-group li:last-child {
+  margin-right: 0;
+}
+
+.weather-day img {
+  width: 35px;
+}
+
+@media only screen and (max-width: 600px) {
+  .details p {
+    font-size: 8px;
+  }
+  .weather-card-calendar {
+    overflow-y: scroll;
+    height: 100%;
+  }
+  header {
+    flex-direction: column;
+    align-items: end;
+  }
+
+  .time {
+    font-size: 10px;
+    text-align: center;
+    margin-top: 40px;
+  }
+  .button-group li {
+    font-size: 10px;
+    padding: 5px 8px;
+  }
+  .weather-card-calendar h2 {
+    font-size: 1.2em;
+  }
+  .weather-day {
+    width: 123px;
+  }
+  .weather-date {
+    font-size: 20px;
+  }
+  .weather-calendar {
+    gap: 1px;
+  }
+  .weather-temp {
+    font-size: 0.8em;
+  }
+}

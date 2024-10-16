@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AmarWeather</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <main>
+        <div class="weather-container">
+            <header>
+                <div class="logo">
+                    <img src="//cdn.weatherapi.com/v4/images/weatherapi_logo.png" alt="Weather Icon">
+                    <h1>AmarWeather</h1>
+                </div>
+                <div id="time" class="time"></div>
+            </header>
+
+
+            <nav>
+                <div id="btn-div" style="display: none;">
+                    <ul class="button-group">
+                        <li id="today">Today</li>
+                        <li id="tommorow">Tomorrow</li>
+                        <li id="monthly">Monthly Forecast</li>
+                    </ul>
+
+                </div>
+            </nav>
+
+            <div class="weather-card">
+                <form class="location-search">
+                    <input type="text" placeholder="Search location..." id="search">
+                </form>
+                <div class="weather-info" id="data-card"></div>
+            </div>
+        </div>
+    </main>
+
+
+</body>
+<script src="./js/index.js">
+</script>
+
+</html>
