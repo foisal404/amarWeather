@@ -53,7 +53,6 @@ header {
   padding: 6px 10px;
   border: 0px solid none;
   border-radius: 5%;
-  min-width: 115px;
 }
 
 nav ul {
@@ -117,9 +116,24 @@ nav ul li.active {
 .details {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .details p {
   font-size: 14px;
+  padding: 5px 8px;
+  background-color: #dadde2;
+  border: 0px solid none;
+  border-radius: 20px;
+}
+.time-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2px;
+  width: 145px;
+}
+.time-field span {
+  margin: 0px 10px;
 }
 
 .hourly-forecast {
@@ -252,5 +266,8 @@ nav ul li.active {
   }
   .weather-temp {
     font-size: 0.8em;
+  }
+  .time-field {
+    width: 105px;
   }
 }
